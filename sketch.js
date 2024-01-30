@@ -27,9 +27,8 @@ function draw() {
   player2();
   kollisjon();
   kollisjon2();
-  tekst();
   treasure();
-  
+  tekst();
 }
 
 
@@ -58,6 +57,7 @@ function tekst() {
   
   if (poeng <= -10) {
     textSize(50);
+    fill("blue");
     text("Athenians WIN!", 400, 400);
     noLoop();
   }
